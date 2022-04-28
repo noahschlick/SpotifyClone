@@ -1,4 +1,7 @@
 
+## My Spotify Clone
+Note: A video of the final product is shown in screenRecording.mov
+
 This is a Spotify clone developed with Next.js. All of the data on the app comes straight from the spotify API. Because we are using the SpotifyAPI, the app has its limitations. You will have to login to your spotify account through the app and have another device logged in to spotify simultaneously. An authentication token will be used once you initially sign in. Once you loged in, you will be able to play the music on your spotify app and browse your playlist. Recoil is used to manage the state of data within the app. Tailwind CSS is used to style the app. 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
