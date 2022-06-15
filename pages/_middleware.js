@@ -12,9 +12,9 @@ export async function middleware(req) {
     if(pathname.includes("/api/auth") || token) {
         return NextResponse.next();
     }
-
+    const link = process.env.NEXTAUTH_URL 
     // Redirect them to login if they dont have token AND are requesting a protected route
     if (!token && pathname !== "/login") {
-        return NextResponse.redirect(`${NEXTAUTH_URL}/login`);
+        return NextResponse.redirect(`${link}/login`);
     }
 }
